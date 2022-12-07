@@ -29,52 +29,64 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Enrique Rodriguez" />
 <meta
-  name="description"
+  name="travel-accomodations"
   content="The Visit Honduras website aims to condense a curated guide for a trip to Honduras done by a local. The website gives travel tips and guidance for anyone planning a visit." />
   </head>
     <style>
-        p {
-      text-indent: 30px;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 1.4em;
-      color: white;
-      text-indent: 30px;
-      width: 100%;
-      text-align: left;
-    }
+        h1 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                text-align: center;
+                padding: 30px;
+                color: white;
+             }
+             h2 {
+               font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+               text-align: center;
+               padding: 30px;
+               color: white;
+             }
+            h3 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                text-align: center;
+                padding: 30px;
+                color: white;
+             }
+            p {
+              text-indent: 30px;
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+              font-size: 1.2em;
+              text-indent: 30px;
+              text-align: left;
+              width: 100%;
+              color: white;
+            }
             body {
               background-color: #3c586b;
               margin-left: 120px;
               margin-right: 120px;
             }
         
-           table a:link {
-              color: #11495c;
+             a:link {
+              color: #4faecd;
               text-decoration: none;
-            }
-            a:link {
-              color: #041f28;
-              text-decoration: none;
-            }
-            table a:visited {
-              color:  #46565a;
-              text-decoration: none;
+              cursor: pointer;
             }
             a:visited {
               color:  #4faecd;
               text-decoration: none;
-            }
+              cursor: pointer;
+            } 
+
             #logo{
               height: 80px;
               width: 235px;
               border: 0;
-            }
-            #navbar {
-                text-align: center;
-                font-size: large;
+              cursor: pointer;
             }
             #bottomlinks {
                 text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
             }
             #copyright {
               text-align: center;
@@ -87,35 +99,98 @@
                 text-align: center;
                 padding: 30px;
                 color: white;
-       }
-       h2 {
+                font-size: 1.2em;
+            }
+
+            body {
+                 margin: 1em;
+                 text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(232, 119, 45);
                 text-align: center;
-                padding: 30px;
+            }
+
+            .navbar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 15px;
+                margin: auto;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+                display: inline-block;
+                width: 14%; 
+                cursor: pointer;
+                border-left: 1px solid white;
+            }
+
+            .navbar a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .navbar a:active {
+                background-color: #4fadcd88;
                 color: white;
-       }
-       table {
+                cursor: pointer;
+            }
+            .bottomlinks {
+                overflow: hidden;
+                background-color: #3c586b;
+                cursor: pointer;
+            }
+            .bottomlinks a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:active {
+                background-color: #4fadcd88;
+                color: white;
+                cursor: pointer;
+            }
+            /* Only page-specific CSS below */
+            table {
  
-  border-collapse: collapse;
-  width: 80%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  margin-bottom: 100px;
-}
+              border-collapse: collapse;
+              width: 80%;
+              position: relative;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 20px;
+              margin-bottom: 100px;
+            }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: center;
+              padding: 8px;
+            }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-tr:nth-child(odd) {
-  background-color: #dddddd97;
-}
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            tr:nth-child(odd) {
+              background-color: #dddddd97;
+            }
         </style>
 
 </head>
@@ -124,7 +199,7 @@ tr:nth-child(odd) {
         <a href="index.html">
           <img id="logo" src="images/visithnlogo.png" alt="Visit Honduras Logo">
         </a>
-        <div id="navbar">
+        <div class="navbar">
           <a href="index.html">&nbsp Home &nbsp</a>
           <a href="touristic-places.html">&nbsp Touristic Places &nbsp</a>
           <a href="travel-accomodations.html">&nbsp Travel Accomodations &nbsp</a>
@@ -228,7 +303,7 @@ Whether you wish to bury your toes in the pearl-white sands of Roatan, or soar t
 
 
         <hr />
-        <div id="bottomlinks">
+        <div class="bottomlinks">
      <a href="index.html">&nbsp Home &nbsp</a>
      <a href="sitemap.html">&nbsp Sitemap &nbsp</a>
          <a href="contact-page.html">&nbsp Contact Us &nbsp</a>

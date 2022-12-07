@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTX8Q81HF3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTX8Q81HF3');
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="Enrique Rodriguez" />
+<meta
+  name="playground"
+  content="The Visit Honduras website aims to condense a curated guide for a trip to Honduras done by a local. The website gives travel tips and guidance for anyone planning a visit." />
+  </head>
+    <style>
+            h1 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                text-align: center;
+                padding: 30px;
+                color: white;
+             }
+             h2 {
+               font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+               text-align: center;
+               padding: 30px;
+               color: white;
+             }
+            h3 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                text-align: center;
+                padding: 30px;
+                color: white;
+             }
+            p {
+              text-indent: 30px;
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+              font-size: 1.2em;
+              text-indent: 30px;
+              text-align: left;
+              width: 100%;
+              color: white;
+            }
+            body {
+              background-color: #3c586b;
+              margin-left: 120px;
+              margin-right: 120px;
+            }
+        
+             a:link {
+              color: #4faecd;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            a:visited {
+              color:  #4faecd;
+              text-decoration: none;
+              cursor: pointer;
+            } 
+
+            #logo{
+              height: 80px;
+              width: 235px;
+              border: 0;
+              cursor: pointer;
+            }
+            #bottomlinks {
+                text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
+            }
+            #copyright {
+              text-align: center;
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+              font-size: 10px;
+              text-decoration: none;
+              color: white;
+            }
+            h1 {
+                text-align: center;
+                padding: 30px;
+                color: white;
+                font-size: 1.2em;
+            }
+
+            body {
+                 margin: 1em;
+                 text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(232, 119, 45);
+                text-align: center;
+            }
+
+            .navbar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+                display: inline-block;
+                width: 10%; 
+                cursor: pointer;
+            }
+
+            .navbar a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .navbar a:active {
+                background-color: #4fadcd88;
+                color: white;
+                cursor: pointer;
+            }
+            .bottomlinks {
+                overflow: hidden;
+                background-color: #3c586b;
+                cursor: pointer;
+            }
+            .bottomlinks a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:active {
+                background-color: #4fadcd88;
+                color: white;
+            }
+            /* Only page-specific CSS below */
+            button {
+                background-color: rgb(198, 97, 30);
+                color: #f2f2f2;
+                text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #4fadcd88;
+                color: white;
+            }
+            figure.zoom {
+  background-position: 50% 50%;
+  position: relative;
+  margin: 150px auto;
+  border: 5px solid white;
+  box-shadow: -1px 5px 15px black;
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+figure.zoom img:hover {
+  opacity: 0;
+}
+
+figure.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+        </style>
+
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">
+          <img id="logo" src="images/visithnlogo.png" alt="Visit Honduras Logo">
+        </a>
+        <div class="navbar">
+          <a href="index.html">&nbsp Home &nbsp</a>
+          <a href="touristic-places.html">&nbsp Touristic Places &nbsp</a>
+          <a href="travel-accomodations.html">&nbsp Travel Accomodations &nbsp</a>
+          <a href="activities.html">&nbsp Activities &nbsp</a>
+          <a href="travel-tips.html">&nbsp Travel Tips &nbsp</a>
+          <a href="more-info.html">&nbsp More Info &nbsp</a>
+          <button id="hntime">Check the time in Honduras.</button>
+        </div>
+
+        </div>
+        
+
+<!-- 
+          <div id="zoomarea" onmouseover="enlargeImage('img')">
+            <img
+              src="images/roatan.jpeg"
+              alt="Tiger 1"
+              title="Tiger is walking"
+              width="400px"
+              height="250px"
+              id="tiger1"
+            />
+          </div>
+         -->
+         <img onmouseover="enlargeImg(this)" onmouseout="shrinkImg(this)" src="images/roatan.jpeg" alt="Roatan" width="400px" height="250px">
+
+         <script>
+           
+           
+        
+function enlargeImg(x) {
+  x.style.height = "200px";
+  x.style.width = "350px";
+}
+
+function shrinkImg(x) {
+  x.style.height = "250px";
+  x.style.width = "400px";
+}
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           // function enlargeImage() {
+            //    console.log("...starting function enlargeImage...");
+            //    const imageEl = document.getElementById("tiger1");
+            //    let w = imageEl.width;
+            //    let h = imageEl.height;
+            //    w *= 1.2;
+            //    h *= 1.2;
+            //    imageEl.width = w;
+            //    imageEl.height = h;
+    
+            // }
+
+
+//  document.getElementById("zoomarea");
+//       addEventListener("mouseover", function () {
+//         enlargeImage();
+//       });
+
+
+    // function shrinkImage(){
+    // console.log("...starting function shrinkImage...");
+    // const imageEl = document.getElementById("tiger1");
+    // let w = imageEl.width;
+    // let h = imageEl.height;
+    // w = w / 1.2;
+    // h = h / 1.2;
+    // imageEl.width = w;
+    // imageEl.height = h;
+    // }
+    
+     
+    //   document.getElementById("zoomarea");
+    //   addEventListener("mouseout", function () {
+    //     shrinkImage();
+    //   });
+
+
+    </script>
+  </body>
+</html>

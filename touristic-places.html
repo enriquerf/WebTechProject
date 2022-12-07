@@ -29,14 +29,36 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Enrique Rodriguez" />
 <meta
-  name="description"
+  name="touristic-places"
   content="The Visit Honduras website aims to condense a curated guide for a trip to Honduras done by a local. The website gives travel tips and guidance for anyone planning a visit." />
   </head>
     <style>
-        p {
+            h1 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                text-align: center;
+                padding: 30px;
+                color: white;
+                font-size: 35px;
+             }
+             h2 {
+               font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+               text-align: center;
+               padding: 30px;
+               color: white;
+             }
+            h3 {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                text-align: center;
+                padding: 30px;
+                color: white;
+             }
+            p {
               text-indent: 30px;
               font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
               font-size: 1.2em;
+              text-indent: 30px;
+              text-align: left;
+              width: 100%;
               color: white;
             }
             body {
@@ -45,25 +67,27 @@
               margin-right: 120px;
             }
         
-            a:link {
-              color: #add8e6;
+             a:link {
+              color: #4faecd;
               text-decoration: none;
+              cursor: pointer;
             }
             a:visited {
               color:  #4faecd;
               text-decoration: none;
-            }
+              cursor: pointer;
+            } 
+
             #logo{
               height: 80px;
               width: 235px;
               border: 0;
-            }
-            #navbar {
-                text-align: center;
-                font-size: large;
+              cursor: pointer;
             }
             #bottomlinks {
                 text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
             }
             #copyright {
               text-align: center;
@@ -74,10 +98,158 @@
             }
             h1 {
                 text-align: center;
+                padding: 3px;
+                color: white;
+                font-size: 1.2em;
+            }
+
+            body {
+                 margin: 1em;
+                 text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 1.2em;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(232, 119, 45);
+                text-align: center;
+            }
+
+            .navbar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 15px;
+                margin: auto;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+                display: inline-block;
+                width: 14%; 
+                cursor: pointer;
+                border-left: 1px solid white;
+            }
+
+            .navbar a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .navbar a:active {
+                background-color: #4fadcd88;
+                color: white;
+                cursor: pointer;
+            }
+            .bottomlinks {
+                overflow: hidden;
+                background-color: #3c586b;
+                cursor: pointer;
+            }
+            .bottomlinks a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+
+            .bottomlinks a:active {
+                background-color: #4fadcd88;
+                color: white;
+                cursor: pointer;
+            }
+            /* Only page-specific CSS below */
+      
+            h4 {
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+               text-align: right;
+               padding: 30px;
+               color: white;
+               font-size: 1em;
+            }
+        #you {
+          height: 200px;
+          width: 200px;
+          margin-right:80%;
+          margin-left: 30px;
+        }
+        .flex-container {
+           display: flex;
+        }
+
+        .flex-child {
+          flex: 1;
+          border: 2px solid yellow;
+        }  
+
+        .flex-child:first-child {
+           margin-right: 20px;
+        } 
+
+        #button {
+                float: left;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 14px 15px;
+                margin: auto;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+                display: inline-block;
+                width: 255px; 
+                height: 60px;
+                cursor: pointer;
+                border-left: 1px solid white;
+                background-color: rgb(232, 119, 45);
+            }
+
+            #button:hover {
+                background-color: #4faecd;
+                color: black;
+                cursor: pointer;
+            }
+            .grid {
+              display: grid;
+              grid-auto-rows: 116px;
+              grid-gap: 4px 51px;
+              grid-template-areas: "left right";
+              grid-template-columns: auto auto;
+              margin: 27px 14px;
+            }
+
+            .content {
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                display: flex;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                text-align: center;
                 padding: 30px;
                 color: white;
-       }
-        
+                font-size: 15px;
+              }
+
+              #subtitle {
+                color: rgb(232, 119, 45);
+                font-size: 25px;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+              }
+              #separation {
+                margin: 10px;
+              }
+              #buffer {
+              margin: 10px;
+              padding: 10px;
+            }
+
         </style>
 
 </head>
@@ -86,7 +258,7 @@
         <a href="index.html">
           <img id="logo" src="images/visithnlogo.png" alt="Visit Honduras Logo">
         </a>
-        <div id="navbar">
+        <div class="navbar">
           <a href="index.html">&nbsp Home &nbsp</a>
           <a href="touristic-places.html">&nbsp Touristic Places &nbsp</a>
           <a href="travel-accomodations.html">&nbsp Travel Accomodations &nbsp</a>
@@ -97,11 +269,60 @@
         </div>
         <hr />
 
+        <div class="flex-container">
 
-
+          <div class="person">
+            <h4 id="honduras">Honduras this way →</h4>
+            <input id="button" type = "button" value = "Click after reading this page." onclick = "moveRight();" />
+          </div>
+          
+          <div class="destination">
+          <form>
+          <img id = "you" src = "/images/youtraveling.jpg" />
+          
+          </form>    
+          </div>
+         </div>
+         <hr />
+          
+         <div id="buffer">
+        </div>
+         <img id="slidepics" src="images/coralreef.jpeg" title="Honduran Tourist Sites Slideshow" alt="Honduran Tourist Sites Slideshow"  width="75%" 
+          height="500px">
+          <div id="separation"> </div>
+         
+         
+         <h1>Touristic Places in Honduras</h1>
+       
+          <div class="grid">
+            <div class="content">
+              <div>
+                <div id="subtitle">Copán</div>Copán hosts activities for any history fanatic. With numerous Mayan archeological sites, the region holds an immense cultural value for the country. With the region speckled with ancient ruins, guests can explore during the day and relax in geothermal hot water springs at night while staying at an all-inclusive resort.
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div id="subtitle">Caribbean Coast</div>With uncountable miles of pristine white-sand beaches, the Caribbean coast of Honduras is home to a plentitute of unique flora and fauna as well as numerous groups of native settlements. Stretching from the border with Nicaragua through Guatemela, the long coast also has popular vacation spots like Tela, Omoa, and Puerto Cortes as well as the UNESCO Rio Platano protected biosphere.
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div id="subtitle">Natural Wonders</div>From the protected Rio Platano Biosphere where the legend of El Dorado originates, to the vast mangrove forests of the Pacific coast, Honduras is blessed by mother nature. Countless waterfalls surround the country, mountains teaming with wildlife are in abundance the second you leave the city, and nature even seeks into urban areas once in a while through large mammals like deer finding shelter at Tegucigalpa's neighbor, La Tigra national park, during the dry months.
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div id="subtitle">Active Lifestyle Hotspots</div>Whether you are interested in world-class scuba diving or soaring through Central America's highest zipline, Honduras welcomes every adrenaline seeker. A plentitude of outdoor activities can be found across the country to cater for anyone's preferences.
+              </div>
+            </div>
+          </div>
+       
+         
+          <div id="buffer">
+          </div>
 
         <hr />
-        <div id="bottomlinks">
+        <div class="bottomlinks">
      <a href="index.html">&nbsp Home &nbsp</a>
      <a href="sitemap.html">&nbsp Sitemap &nbsp</a>
          <a href="contact-page.html">&nbsp Contact Us &nbsp</a>
@@ -110,5 +331,46 @@
          </div>
          <p id="copyright">Copyright Pending © 2022 Enrique Rodriguez.</p>
          
+
+         <script>
+
+            let imgObj = document.getElementById("you");
+            let animate ;
+            
+            function traveler() {
+               imgObj = document.getElementById('you');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+            }
+            function moveRight() {
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+               animate = setTimeout(moveRight,20);    
+            }
+            function stop() {
+               clearTimeout(animate);
+               imgObj.style.left = '0px'; 
+            }
+            
+            window.onload = traveler;
+
+            let imgArray = [
+              'images/coralreef.jpeg',
+              'images/zipline.jpeg',
+              'images/hotsprings.jpeg',
+              'images/maya.jpeg',
+              'images/coast.jpeg',
+          ];
+          let curIndex = 0;
+          let imgDuration = 3000;
+      
+          function slideShow() {
+              document.getElementById('slidepics').src = imgArray[curIndex];
+              curIndex++;
+              if (curIndex == imgArray.length) { curIndex = 0; }
+              setTimeout("slideShow()", imgDuration);
+          }
+          slideShow();
+
+         </script>
      </body>
      </html>
