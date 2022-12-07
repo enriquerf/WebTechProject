@@ -191,6 +191,27 @@
             tr:nth-child(odd) {
               background-color: #dddddd97;
             }
+            button {
+                background-color: rgb(232, 119, 45);
+                color: #f2f2f2;
+                text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+            }
+            button:hover {
+                background-color: #4fadcd88;
+                color: white;
+            }
+            h5 {
+              font-family:  Arial, sans-serif;
+               text-align: center;
+               font-size: 12px;
+               padding: 7px;
+               color: white;
+              }
         </style>
 
 </head>
@@ -304,6 +325,11 @@ Whether you wish to bury your toes in the pearl-white sands of Roatan, or soar t
 
         <hr />
         <div class="bottomlinks">
+          <h5>Try out our site themes!</h5>
+          <button id="darkbtn">DARK THEME</button>
+          <button id="lightbtn">LIGHT THEME</button>
+  
+          <p>&nbsp</p>
      <a href="index.html">&nbsp Home &nbsp</a>
      <a href="sitemap.html">&nbsp Sitemap &nbsp</a>
          <a href="contact-page.html">&nbsp Contact Us &nbsp</a>
@@ -311,6 +337,28 @@ Whether you wish to bury your toes in the pearl-white sands of Roatan, or soar t
          <div>
          </div>
          <p id="copyright">Copyright Pending © 2022 Enrique Rodriguez.</p>
+         <script>
+             function darkMode() {
+        const darkbtn =
+          (document.querySelector("body").style.backgroundColor = "black");
+          (document.querySelector(".bottomlinks").style.background = "black");
+      }
+      function lightMode() {
+        const lightbtn =
          
+          (document.querySelector("body").style.background = "#3c586b");
+          (document.querySelector(".bottomlinks").style.background = "#3c586b");
+      }
+
+      document.getElementById("darkbtn").addEventListener("click", function () {
+        darkMode();
+      });
+
+      document
+        .getElementById("lightbtn")
+        .addEventListener("click", function () {
+          lightMode();
+        });
+         </script>
      </body>
      </html>

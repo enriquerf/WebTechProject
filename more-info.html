@@ -185,6 +185,27 @@
               width: 55%;
               height: 450px;
             }
+            button {
+                background-color: rgb(232, 119, 45);
+                color: #f2f2f2;
+                text-align: center;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: center;
+            }
+            button:hover {
+                background-color: #4fadcd88;
+                color: white;
+            }
+            h5 {
+              font-family:  Arial, sans-serif;
+               text-align: center;
+               font-size: 12px;
+               padding: 7px;
+               color: white;
+              }
         </style>
 
 </head>
@@ -225,6 +246,11 @@
 
 
         <hr />
+        <h5>Try out our site themes!</h5>
+        <button id="darkbtn">DARK THEME</button>
+        <button id="lightbtn">LIGHT THEME</button>
+
+        <p>&nbsp</p>
         <div class="bottomlinks">
      <a href="index.html">&nbsp Home &nbsp</a>
      <a href="sitemap.html">&nbsp Sitemap &nbsp</a>
@@ -239,6 +265,28 @@ btn.addEventListener('click', function btnClick() {
 btn.innerHTML = 'POLICE: 911 &nbsp &nbsp AMBULANCE: 195 &nbsp &nbsp TEGUCIGALPA HOSPITAL: +504 2280-1500 &nbsp &nbsp SPS HOSPITAL: +504 2516-0174';
 });
 
+function darkMode() {
+        const darkbtn =
+          (document.querySelector("body").style.backgroundColor = "black");
+          (document.querySelector(".bottomlinks").style.background = "black");
+      }
+      function lightMode() {
+        const lightbtn =
+         
+          (document.querySelector("body").style.background = "#3c586b");
+          (document.querySelector(".bottomlinks").style.background = "#3c586b");
+      }
+
+      document.getElementById("darkbtn").addEventListener("click", function () {
+        darkMode();
+      });
+
+      document
+        .getElementById("lightbtn")
+        .addEventListener("click", function () {
+          lightMode();
+        });
+          
          </script>
      </body>
      </html>
